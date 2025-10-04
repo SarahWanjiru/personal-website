@@ -1,3 +1,8 @@
+/**
+ * Navbar Component - Responsive navigation bar with mobile menu
+ * Features smooth scrolling, backdrop blur effects, and dynamic styling based on scroll position
+ */
+
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 

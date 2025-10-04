@@ -1,3 +1,8 @@
+/**
+ * ProjectCard Component - Individual project display card with hover effects
+ * Shows project image, description, and links to live demo and source code
+ */
+
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
 

@@ -1,3 +1,8 @@
+<!--
+ * README Documentation - Project setup, features, and deployment guide
+ * Comprehensive documentation for Sarah's portfolio website project
+ -->
+
 # Sarah - Personal Portfolio Website
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a Full Stack Software Developer. Built with React, Tailwind CSS, and optimized for performance and SEO.

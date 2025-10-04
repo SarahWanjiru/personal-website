@@ -1,3 +1,8 @@
+/**
+ * Footer Component - Website footer with social links, navigation, and contact information
+ * Displays Sarah's portfolio footer with professional links and availability status
+ */
+
 import React from "react";
 import {
   Linkedin,

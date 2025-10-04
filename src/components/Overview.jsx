@@ -1,3 +1,8 @@
+/**
+ * Overview Component - Statistics display showing projects, blogs, and article views
+ * Features animated counters and visual statistics for portfolio metrics
+ */
+
 import React from "react";
 import { Plus } from "lucide-react";
 import { useInView } from "react-intersection-observer";
