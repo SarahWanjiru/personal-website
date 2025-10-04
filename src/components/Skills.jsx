@@ -6,8 +6,6 @@ import Js from "../assets/Js.png";
 import Mongo from "../assets/Mongo.svg";
 import Node from "../assets/Nodejs.svg";
 import ReactImg from "../assets/React.svg";
-import Rails from "../assets/Rails.svg";
-import Ruby from "../assets/Ruby.svg";
 import Tailwind from "../assets/Tailwind.svg";
 import Python from "../assets/Python.svg";
 import Django from "../assets/Django.svg";
@@ -15,6 +13,17 @@ import Nextjs from "../assets/Nextjs.svg";
 import Bootstrap from "../assets/Bootstrap.png";
 import Github from "../assets/Github.svg";
 import Typescript from "../assets/TypeScript.svg";
+import Php from "../assets/php-logo.svg";
+import Laravel from "../assets/laravel.png";
+import Postgres from "../assets/postgresql.png";
+import Mysql from "../assets/postgresql.png";
+import Aws from "../assets/Amazon_Web_Services-Logo.svg";
+import Docker from "../assets/docker.png";
+import Kubernetes from "../assets/Kubernetes-Logo.svg";
+import Terraform from "../assets/terraform.png";
+import Jenkins from "../assets/Jenkins.png";
+import Vscode from "../assets/vscode.png";
+import Postman from "../assets/postman.png";
 import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
@@ -27,34 +36,49 @@ const Skills = () => {
       title: "Frontend Development",
       color: "from-primary-500 to-primary-600",
       skills: [
-        { name: "React", icon: ReactImg, projects: 8, articles: 0 },
-        { name: "Next.js", icon: Nextjs, projects: 4, articles: 1 },
-        { name: "JavaScript", icon: Js, projects: 12, articles: 2 },
-        { name: "TypeScript", icon: Typescript, projects: 6, articles: 0 },
-        { name: "HTML5", icon: Html, projects: 15, articles: 0 },
-        { name: "Tailwind CSS", icon: Tailwind, projects: 10, articles: 1 },
-        { name: "Bootstrap", icon: Bootstrap, projects: 5, articles: 0 },
+        { name: "React", icon: ReactImg },
+        { name: "Next.js", icon: Nextjs },
+        { name: "JavaScript", icon: Js },
+        { name: "TypeScript", icon: Typescript },
+        { name: "HTML5", icon: Html },
+        { name: "Tailwind CSS", icon: Tailwind },
+        { name: "Bootstrap", icon: Bootstrap },
       ],
     },
     {
       title: "Backend Development",
-      color: "from-accent-500 to-accent-600",
+      color: "from-primary-500 to-primary-600",
       skills: [
-        { name: "Node.js", icon: Node, projects: 7, articles: 1 },
-        { name: "Express.js", icon: Express, projects: 6, articles: 0 },
-        { name: "Python", icon: Python, projects: 6, articles: 2 },
-        { name: "Django", icon: Django, projects: 3, articles: 1 },
-        { name: "Ruby on Rails", icon: Rails, projects: 4, articles: 0 },
-        { name: "Ruby", icon: Ruby, projects: 4, articles: 0 },
+        { name: "Node.js", icon: Node },
+        { name: "Express.js", icon: Express },
+        { name: "Python", icon: Python },
+        { name: "Django", icon: Django },
+        { name: "PHP", icon: Php },
+        { name: "Laravel", icon: Laravel },
+      ],
+    },
+    {
+      title: "Databases",
+      color: "from-success-500 to-success-600",
+      skills: [
+        { name: "MongoDB", icon: Mongo },
+        { name: "PostgreSQL", icon: Postgres },
+        { name: "MySQL", icon: Mysql },
       ],
     },
     {
       title: "Tools & Technologies",
-      color: "from-success-500 to-success-600",
+      color: "from-primary-500 to-primary-600",
       skills: [
-        { name: "Git", icon: Git, projects: 20, articles: 0 },
-        { name: "GitHub", icon: Github, projects: 20, articles: 0 },
-        { name: "MongoDB", icon: Mongo, projects: 5, articles: 1 },
+        { name: "Git", icon: Git },
+        { name: "GitHub", icon: Github },
+        { name: "AWS", icon: Aws },
+        { name: "Docker", icon: Docker },
+        { name: "Kubernetes", icon: Kubernetes },
+        { name: "Terraform", icon: Terraform },
+        { name: "Jenkins", icon: Jenkins },
+        { name: "VS Code", icon: Vscode },
+        { name: "Postman", icon: Postman },
       ],
     },
   ];
@@ -70,15 +94,15 @@ const Skills = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-secondary-900">
             Technical{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
               Skills
             </span>
           </h2>
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-            A comprehensive toolkit for building modern, scalable web
-            applications
+            A comprehensive toolkit for building secure, scalable, and efficient
+            web and cloud-based applications.
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-full mx-auto"></div>
         </div>
 
         {/* Skills Categories */}
@@ -100,7 +124,7 @@ const Skills = () => {
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
-                  {category.skills.map((skill, skillIndex) => (
+                  {category.skills.map((skill) => (
                     <div
                       key={skill.name}
                       className="group relative bg-secondary-50 hover:bg-white rounded-xl p-4 transition-all duration-300 hover:shadow-soft hover:-translate-y-1 border border-transparent hover:border-primary-200"
@@ -114,31 +138,9 @@ const Skills = () => {
                             loading="lazy"
                           />
                         </div>
-                        <div>
-                          <h4 className="font-semibold text-secondary-900 text-sm">
-                            {skill.name}
-                          </h4>
-                          <div className="mt-2 space-y-1">
-                            <div className="flex items-center justify-center gap-1">
-                              <span className="text-sm font-medium text-primary-600">
-                                {skill.projects}
-                              </span>
-                              <span className="text-xs text-secondary-500">
-                                project{skill.projects !== 1 ? "s" : ""}
-                              </span>
-                            </div>
-                            {skill.articles > 0 && (
-                              <div className="flex items-center justify-center gap-1">
-                                <span className="text-sm font-medium text-accent-600">
-                                  {skill.articles}
-                                </span>
-                                <span className="text-xs text-secondary-500">
-                                  article{skill.articles !== 1 ? "s" : ""}
-                                </span>
-                              </div>
-                            )}
-                          </div>
-                        </div>
+                        <h4 className="font-semibold text-secondary-900 text-sm">
+                          {skill.name}
+                        </h4>
                       </div>
                     </div>
                   ))}

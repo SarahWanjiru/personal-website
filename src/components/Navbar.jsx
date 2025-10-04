@@ -54,7 +54,7 @@ const Navbar = () => {
             href="#home"
             className="text-2xl lg:text-3xl font-heading font-bold text-secondary-900 hover:text-primary-600 transition-colors duration-300"
           >
-            Geoff<span className="text-primary-600">rey.</span>
+            Sarah
           </a>
 
           {/* Desktop Navigation */}

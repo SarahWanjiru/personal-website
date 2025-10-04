@@ -10,26 +10,23 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote:
-        "Geoffrey transformed our online presence completely. The 30% increase in organic traffic and 50% improvement in page load times exceeded our expectations. His technical expertise combined with business understanding makes him invaluable.",
-      author: "Healthcare Industry Client",
-      role: "Operations Manager",
-      company: "Healthcare Sector",
+        "Sarah played a crucial role in improving our CI/CD pipeline. Her understanding of Docker and AWS simplified our deployment process and reduced build times significantly. Reliable, detail-oriented, and an excellent problem solver.",
+      role: "DevOps Lead",
+      company: "Iron Rim",
       rating: 5,
     },
     {
       quote:
-        "The QR-based asset tracking system Geoffrey implemented saved us thousands in equipment costs. His ability to understand our business needs and translate them into technical solutions is exceptional.",
-      author: "Operations Manager",
-      role: "IT Director",
-      company: "Technology Sector",
+        "We were impressed by Sarah’s ability to automate our infrastructure using Terraform. She approached every challenge methodically and communicated clearly throughout the project. Her AWS knowledge was instrumental in optimizing our costs.",
+      role: "Cloud Infrastructure Manager",
+      company: "Cloud My Tribe",
       rating: 5,
     },
     {
       quote:
-        "Working with Geoffrey was a game-changer for our development process. His mentorship improved our team's code quality by 30% and significantly reduced debugging time. Highly recommended!",
-      author: "Development Team Lead",
-      role: "Senior Developer",
-      company: "Software Company",
+        "Sarah developed a backend service using Express and Laravel that improved the performance and reliability of our internal system. She consistently delivered clean, maintainable code and collaborated well with the entire team.",
+      role: "Software Development Manager",
+      company: "Soma Siri Afrika",
       rating: 5,
     },
   ];
@@ -45,15 +42,14 @@ const Testimonials = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-secondary-900">
             What Clients Say About{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
               Working With Me
             </span>
           </h2>
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-            Real feedback from businesses that have experienced measurable
-            improvements through our collaboration
+            Real feedback from professionals and teams who’ve experienced results through our collaboration
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-full mx-auto"></div>
         </div>
 
         {/* Testimonials Grid */}
@@ -85,23 +81,13 @@ const Testimonials = () => {
 
                 {/* Author Info */}
                 <div className="border-t border-secondary-100 pt-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary-100 to-accent-100 rounded-full flex items-center justify-center">
-                      <span className="text-primary-600 font-semibold text-lg">
-                        {testimonial.author.charAt(0)}
-                      </span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-secondary-900">
-                        {testimonial.author}
-                      </p>
-                      <p className="text-sm text-secondary-600">
-                        {testimonial.role}
-                      </p>
-                      <p className="text-xs text-primary-600 font-medium">
-                        {testimonial.company}
-                      </p>
-                    </div>
+                  <div className="text-center">
+                    <p className="font-semibold text-secondary-900">
+                      {testimonial.role}
+                    </p>
+                    <p className="text-sm text-primary-600 font-medium">
+                      {testimonial.company}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -120,8 +106,7 @@ const Testimonials = () => {
               Ready to Join These Success Stories?
             </h3>
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
-              Let's discuss how I can help your business achieve similar results
-              with proven strategies and innovative solutions.
+              Let’s collaborate to create efficient, secure, and scalable solutions for your business needs.
             </p>
             <a
               href="#contact"

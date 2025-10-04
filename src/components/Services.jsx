@@ -2,17 +2,17 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import {
   Code2,
-  TrendingUp,
+  Cloud,
   Cog,
-  GraduationCap,
-  Globe,
+  Server,
   Database,
   Settings,
-  Users,
-  Search,
-  BarChart3,
   Workflow,
-  BookOpen,
+  Layers,
+  Network,
+  Terminal,
+  Shield,
+  Rocket,
 } from "lucide-react";
 
 const Services = () => {
@@ -22,67 +22,68 @@ const Services = () => {
 
   const services = [
     {
-      title: "Custom Web Application Development",
+      title: "Junior Software Developer",
       description:
-        "Full-stack solutions tailored to your business needs, from concept to deployment.",
+        "Hands-on experience in full-stack development using React, Node.js, Python, and Flutter to build responsive and interactive applications.",
       icon: Code2,
       color: "from-primary-500 to-primary-600",
       features: [
-        { icon: Globe, text: "React.js & Next.js frontend development" },
-        {
-          icon: Database,
-          text: "Node.js, Python Django, Ruby on Rails backends",
-        },
-        {
-          icon: Settings,
-          text: "API development and third-party integrations",
-        },
-        { icon: BarChart3, text: "Database design and optimization" },
+        { icon: Layers, text: "Frontend development with React.js" },
+        { icon: Terminal, text: "Backend APIs using Node.js and Python" },
+        { icon: Cog, text: "Cross-platform mobile apps with Flutter" },
+        { icon: Settings, text: "Version control with Git and GitHub" },
       ],
     },
     {
-      title: "Digital Transformation Consulting",
+      title: "Cloud Engineer / Solutions Architect",
       description:
-        "Strategic guidance to modernize your digital presence and optimize business processes.",
-      icon: TrendingUp,
-      color: "from-accent-500 to-accent-600",
+        "Experienced in designing and implementing scalable, secure, and efficient cloud infrastructure on AWS using core services.",
+      icon: Cloud,
+      color: "from-primary-500 to-primary-600",
       features: [
-        { icon: Search, text: "WordPress optimization and maintenance" },
-        { icon: TrendingUp, text: "SEO strategy and implementation" },
-        {
-          icon: BarChart3,
-          text: "Landing page design and conversion optimization",
-        },
-        { icon: Workflow, text: "Workflow automation and process improvement" },
+        { icon: Server, text: "Provisioning EC2, S3, RDS, and VPC resources" },
+        { icon: Database, text: "Data management and storage solutions" },
+        { icon: Shield, text: "IAM configuration and cloud security setup" },
+        { icon: Rocket, text: "Infrastructure as Code using Terraform and CloudFormation" },
       ],
     },
     {
-      title: "Business Process Automation",
+      title: "DevOps Engineer",
       description:
-        "Streamline operations and reduce manual work through intelligent automation solutions.",
+        "Skilled in automating deployment pipelines, managing containerized environments, and maintaining CI/CD workflows for efficient delivery.",
       icon: Cog,
-      color: "from-success-500 to-success-600",
+      color: "from-primary-500 to-primary-600",
       features: [
-        { icon: BarChart3, text: "Asset tracking and management systems" },
-        { icon: Users, text: "CRM integration and optimization" },
-        {
-          icon: Workflow,
-          text: "Task automation using Monday.com and similar platforms",
-        },
-        { icon: Settings, text: "Quality assurance and testing strategies" },
+        { icon: Workflow, text: "Continuous integration using Jenkins and GitHub Actions" },
+        { icon: Server, text: "Containerization with Docker and Kubernetes" },
+        { icon: Cloud, text: "EKS cluster management and monitoring" },
+        { icon: Settings, text: "Automated deployments with CI/CD pipelines" },
       ],
     },
     {
-      title: "Technical Training & Support",
+      title: "Junior Cloud Engineer Trainee",
       description:
-        "Empower your team with technical knowledge and provide ongoing support for smooth operations.",
-      icon: GraduationCap,
+        "Gained foundational experience in networking and infrastructure automation with AWS and Terraform during training at Cloud My Tribe.",
+      icon: Network,
       color: "from-warning-500 to-warning-600",
       features: [
-        { icon: Users, text: "Staff training on new technologies" },
-        { icon: Code2, text: "Code review and best practices implementation" },
-        { icon: Settings, text: "IT support and troubleshooting" },
-        { icon: BookOpen, text: "Documentation and knowledge transfer" },
+        { icon: Cloud, text: "AWS networking and infrastructure setup" },
+        { icon: Workflow, text: "Terraform-based automation for cloud resources" },
+        { icon: Server, text: "Hands-on practice with EC2, S3, and VPCs" },
+        { icon: Settings, text: "Infrastructure monitoring and maintenance" },
+      ],
+    },
+    {
+      title: "AWS Cloud Practitioner Trainee",
+      description:
+        "Completed AWS Certified Cloud Practitioner certification with practical knowledge in core cloud services, scalability, and security.",
+      icon: Shield,
+      color: "from-indigo-500 to-indigo-600",
+      features: [
+        { icon: Cloud, text: "Proficient in EC2, S3, RDS, and IAM management" },
+        { icon: Database, text: "Understanding of cloud storage and databases" },
+        { icon: Shield, text: "Security and compliance best practices" },
+        { icon: Workflow, text: "Building scalable and cost-efficient AWS architectures" },
       ],
     },
   ];
@@ -97,16 +98,16 @@ const Services = () => {
           }`}
         >
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-secondary-900">
-            Comprehensive{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
-              Digital Solutions
+            Professional{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
+              Experience & Expertise
             </span>
           </h2>
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-            End-to-end services designed to accelerate your business growth
-            through innovative technology and strategic digital transformation
+            A showcase of my hands-on experience and technical skills across software development,
+            DevOps, and cloud engineering disciplines.
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-full mx-auto"></div>
         </div>
 
         {/* Services Grid */}
@@ -193,25 +194,23 @@ const Services = () => {
         >
           <div className="bg-secondary-50 rounded-2xl p-8">
             <h3 className="text-2xl font-heading font-bold text-secondary-900 mb-4">
-              Not Sure Which Service You Need?
+              Want to Learn More About My Work?
             </h3>
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
-              Let's have a conversation about your business goals and
-              challenges. I'll recommend the best approach to achieve your
-              objectives.
+              Let’s connect to discuss how my skills and experience can contribute to your team or project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-medium hover:shadow-strong"
               >
-                Schedule a Consultation
+                Contact Me
               </a>
               <a
                 href="#projects"
                 className="inline-flex items-center justify-center gap-3 bg-white hover:bg-secondary-50 text-secondary-800 px-8 py-4 rounded-xl font-semibold transition-all duration-300 border-2 border-secondary-200 hover:border-primary-300"
               >
-                View Case Studies
+                View Projects
               </a>
             </div>
           </div>

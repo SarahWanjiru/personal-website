@@ -14,27 +14,27 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: "https://www.linkedin.com/in/geoffrey-kithuku/",
+      href: "https://www.linkedin.com/in/sarahndungu",
       label: "LinkedIn",
     },
     {
       icon: Twitter,
-      href: "https://x.com/k__geoffrey",
+      href: "https://x.com/shirawbedan?t=Ka7P-tKnKRG1kysM7Br78w&s=08",
       label: "Twitter",
     },
     {
       icon: Github,
-      href: "https://github.com/geoffreykithuku",
+      href: "https://github.com/SarahWanjiru",
       label: "GitHub",
     },
     {
       icon: Mail,
-      href: "mailto:geoffreykithuku@gmail.com",
+      href: "mailto:sarahndungu815@gmail.com",
       label: "Email",
     },
     {
       icon: MessageCircle,
-      href: "https://wa.me/254759892639",
+      href: "https://wa.me/254720171697",
       label: "WhatsApp",
     },
   ];
@@ -51,14 +51,13 @@ const Footer = () => {
 
   const services = [
     { label: "Custom Web Development" },
-    { label: "Digital Transformation" },
-    { label: "Business Automation" },
-    { label: "Technical Training" },
+    { label: "DevOps" },
+    { label: "Cloud Engineer Consulting" },
+    { label: "Software Development" },
   ];
 
   const industries = [
     { label: "Healthcare & Medical" },
-    { label: "Education & Training" },
     { label: "E-commerce & Retail" },
     { label: "Technology Startups" },
   ];
@@ -83,7 +82,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2 space-y-4">
             <h2 className="text-3xl font-heading font-bold">
-              Geoff<span className="text-primary-400">rey.</span>
+              Sarah.
             </h2>
             <p className="text-secondary-300 leading-relaxed max-w-md">
               Full Stack Software Developer passionate about creating
@@ -98,13 +97,13 @@ const Footer = () => {
                 <p className="text-secondary-300">
                   📧{" "}
                   <a
-                    href="mailto:geoffreykithuku@gmail.com"
+                    href="mailto:sarahndungu815@gmail.com"
                     className="hover:text-primary-400 transition-colors duration-300"
                   >
-                    mutembeikithuku12@gmail.com
+                    sarahndungu815@gmail.com
                   </a>
                 </p>
-                <p className="text-secondary-300">📱 +254 759 892 639</p>
+                <p className="text-secondary-300">📱 +254720171697</p>
                 <p className="text-secondary-300">
                   📍 Nairobi, Kenya (Remote Available)
                 </p>
@@ -181,7 +180,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-secondary-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-secondary-400 text-sm text-center sm:text-left">
-            © {currentYear} Geoffrey Kithuku. All rights reserved.
+            © {currentYear} Sarah. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <a

@@ -12,8 +12,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "mutembeikithuku12@gmail.com",
-      href: "mailto:mutembeikithuku12@gmail.com",
+      value: "sarahndungu815@gmail.com",
+      href: "mailto:sarahndungu815@gmail.com",
     },
     {
       icon: MapPin,
@@ -27,17 +27,17 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/geoffreykithuku",
+      href: "https://github.com/SarahWanjiru",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/geoffrey-kithuku/",
+      href: "https://www.linkedin.com/in/sarahndungu"
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://x.com/k__geoffrey",
+      href: "https://x.com/shirawbedan?t=Ka7P-tKnKRG1kysM7Br78w&s=08",
     },
   ];
 
@@ -52,15 +52,16 @@ const Contact = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-secondary-900">
             Let's{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
               Connect
             </span>
           </h2>
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss how we can work
-            together to create something amazing.
+            Ready to solve real world problems through software development, cloud engineering, and DevOps?  
+            <br />
+             Let’s schedule a meeting at your convenience and turn your ideas into scalable, impactful solutions.
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-full mx-auto"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -75,9 +76,10 @@ const Contact = () => {
                 Get in Touch
               </h3>
               <p className="text-secondary-600 leading-relaxed">
-                I'm always interested in hearing about new opportunities,
-                whether it's a full-time position, freelance project, or just a
-                chat about technology and development.
+               <p className="text-lg text-gray-700">
+            I’m always open to new opportunities — from software development and cloud engineering roles to DevOps projects that solve real-world problems. 
+            Whether it’s building scalable systems, automating workflows, or discussing technology and innovation, I’d love to connect.
+              </p>
               </p>
             </div>
 

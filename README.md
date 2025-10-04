@@ -1,4 +1,4 @@
-# Geoffrey Kithuku - Personal Portfolio Website
+# Sarah - Personal Portfolio Website
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a Full Stack Software Developer. Built with React, Tailwind CSS, and optimized for performance and SEO.
 
@@ -209,9 +209,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-**Geoffrey Kithuku**
+**Sarah**
 
-- Email: geoffreykithuku@gmail.com
+- Email: sarahndungu815@gmail.com
 - LinkedIn: [linkedin.com/in/geoffreykithuku](https://linkedin.com/in/geoffreykithuku)
 - GitHub: [github.com/geoffreykithuku](https://github.com/geoffreykithuku)
 - Portfolio: [geoffreykithuku.dev](https://geoffreykithuku.dev)

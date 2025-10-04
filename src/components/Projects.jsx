@@ -41,7 +41,7 @@ const Projects = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-secondary-900">
             Featured{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
               Projects
             </span>
           </h2>
@@ -49,7 +49,7 @@ const Projects = () => {
             A showcase of my recent work, demonstrating technical skills and
             creative problem-solving
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-full mx-auto"></div>
         </div>
 
         {/* Projects Carousel */}
@@ -103,7 +103,7 @@ const Projects = () => {
             inView ? "animate-fade-in delay-600" : "opacity-0"
           }`}
         >
-          <div className="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-8 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-r from-primary-50 to-primary-100 rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-heading font-semibold text-secondary-900 mb-4">
               Interested in working together?
             </h3>

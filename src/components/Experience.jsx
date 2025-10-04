@@ -16,122 +16,114 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Web Developer & IT Support Specialist",
-      company: "Molars Dental Hospital",
-      location: "Nairobi",
-      period: "January 2025 - August 2025",
+      title: "Junior Software Developer",
+      company: "Soma Siri Afrika",
+      location: "Remote",
+      period: "August 2025 - Present",
+      type: "Current Position",
+      challenge:
+        "The company needed to enhance full-stack development capacity and streamline DevOps workflows.",
+      solution:
+        "Developed responsive web components and backend APIs while integrating cloud deployment automation.",
+      results: [
+        "Built and deployed 5 frontend components using TypeScript and Vite for 2 client projects.",
+        "Developed 3 RESTful APIs with Laravel, achieving seamless database integration and authentication.",
+        "Implemented MongoDB CRUD operations and optimized schema, reducing query complexity by 20%.",
+        "Created a cross-platform mobile app prototype in Flutter with 85% code reusability.",
+        "Deployed 2 web applications using AWS EC2 and S3, cutting hosting setup time by 30%.",
+        "Collaborated in 8 GitHub code reviews and maintained 98% development uptime through version control best practices.",
+      ],
+      icon: Target,
+      color: "from-primary-500 to-primary-600",
+    },
+    {
+      title: "Cloud Engineer / Solutions Architect",
+      company: "Shinrai Technologies",
+      location: "Hybrid",
+      period: "February 2025 - August 2025",
       type: "Contract",
       challenge:
-        "Hospital needed improved online presence and streamlined operations",
-      solution: "Comprehensive web optimization and system implementation",
+        "Organizations needed secure, automated, and scalable AWS cloud infrastructure for critical workloads.",
+      solution:
+        "Designed and implemented high-availability cloud architectures using AWS core services and automation tools.",
       results: [
-        "Increased organic traffic by 30% through SEO-optimized content strategy",
-        "Improved page load times by 50% through performance optimization",
-        "Boosted lead generation by 25% with strategic landing page design",
-        "Reduced equipment loss by 90% with QR-based asset tracking system",
-        "Saved 10+ hours weekly through Monday.com workflow automation",
-        "Achieved 95% user satisfaction rate in IT support",
+        "Delivered 99.99% uptime for production workloads using EC2, RDS, and EKS.",
+        "Reduced deployment time by 60% using Terraform and CloudFormation automation.",
+        "Improved CI/CD efficiency by 50% through GitHub Actions and Jenkins integration.",
+        "Implemented IAM and VPC configurations, reducing unauthorized access risks by 90%.",
+        "Optimized RDS and DynamoDB databases, improving query performance by 30%.",
+        "Deployed Python microservices in Docker containers on EKS, cutting downtime by 40%.",
       ],
       icon: Building2,
       color: "from-primary-500 to-primary-600",
     },
     {
-      title: "Technical Mentor",
-      company: "eMobilis Technology Training Institute",
-      location: "Nairobi",
-      period: "October 2024 - December 2024",
-      type: "Contract",
-      challenge:
-        "Students struggling with complex programming concepts and debugging",
-      solution:
-        "Structured mentorship program with hands-on debugging sessions",
-      results: [
-        "Improved student engagement by 25% through innovative teaching methods",
-        "Increased successful code resolution rates by 30% using Chrome DevTools and Git",
-        "Developed comprehensive progress tracking system for better outcomes",
-        "Mentored 50+ students in full-stack development",
-      ],
-      icon: Users,
-      color: "from-accent-500 to-accent-600",
-    },
-    {
-      title: "Software Developer",
-      company: "Nobilis Limited",
-      location: "Nairobi",
-      period: "July 2024 - September 2024",
-      type: "Contract",
-      challenge:
-        "Building scalable, responsive web applications in Agile environment",
-      solution: "Cross-functional collaboration and performance optimization",
-      results: [
-        "Delivered responsive React.js interfaces across multiple devices",
-        "Implemented caching techniques that significantly improved load times",
-        "Seamlessly integrated frontend with Ruby on Rails backend systems",
-        "Collaborated with design team to achieve pixel-perfect implementations",
-      ],
-      icon: Target,
-      color: "from-success-500 to-success-600",
-    },
-    {
-      title: "Volunteer Software Developer",
-      company: "TeckTick",
+      title: "DevOps Engineer",
+      company: "Freelance",
       location: "Remote",
-      period: "January 2024 - April 2024",
-      type: "Volunteer",
+      period: "October 2024 - January 2025",
+      type: "Contract",
       challenge:
-        "Startup needed professional web presence and secure blog platform",
+        "Clients required faster, consistent deployments and secure infrastructure automation.",
       solution:
-        "Built company website and blog application with modern tech stack",
+        "Implemented containerized CI/CD pipelines and IaC workflows using AWS, Docker, and Terraform.",
       results: [
-        "Built responsive company website using React.js",
-        "Developed secure blog application using Django",
-        "Implemented secure coding practices and authentication",
-        "Created content management system for easy updates",
+        "Decreased environment setup time by 60% through Terraform and CloudFormation automation.",
+        "Containerized 10+ applications with Docker and deployed across Kubernetes clusters.",
+        "Deployed EKS clusters with autoscaling and IAM-integrated RBAC for 99.95% availability.",
+        "Integrated AWS Secrets Manager with CSI driver for secure secret management.",
+        "Reduced integration errors by 40% through Jenkins and GitHub Actions pipelines.",
+        "Improved monitoring with CloudWatch and Prometheus, cutting MTTR by 55%.",
       ],
       icon: Award,
-      color: "from-warning-500 to-warning-600",
+      color: "from-primary-500 to-primary-600",
     },
     {
-      title: "Software Developer Intern",
-      company: "Pamital",
-      location: "Accra, Ghana",
-      period: "May 2023 - August 2023",
+      title: "Junior Cloud Engineer Trainee",
+      company: "Cloud My Tribe",
+      location: "Nairobi",
+      period: "May 2024 - August 2024",
       type: "Internship",
-      challenge: "International collaboration on UI/UX implementation",
+      challenge:
+        "Hands-on cloud environment setup required improved automation and networking reliability.",
       solution:
-        "Remote collaboration with design team for pixel-perfect components",
+        "Built AWS lab environments using Terraform and enhanced networking and troubleshooting workflows.",
       results: [
-        "Collaborated with international design team remotely",
-        "Implemented pixel-perfect UI components using React.js",
-        "Mastered Tailwind CSS for responsive design",
-        "Gained experience in international development workflows",
+        "Automated EC2 and S3 provisioning with Terraform, reducing manual setup by 45%.",
+        "Configured VPCs, subnets, and security groups for better network isolation and security.",
+        "Resolved connectivity issues between EC2 instances, improving response time by 60%.",
+        "Gained hands-on experience with IAM and least-privilege policies for improved access control.",
+        "Improved consistency across lab projects by implementing reusable infrastructure templates.",
       ],
-      icon: Building2,
+      icon: Users,
       color: "from-info-500 to-info-600",
     },
     {
-      title: "Technical Trainer",
-      company: "Experts Business College",
+      title: "AWS Cloud Practitioner Trainee",
+      company: "AWS re/Start Program (eMobilis)",
       location: "Nairobi",
-      period: "February 2022 - July 2022",
-      type: "Part-time",
-      challenge: "Students needed practical technical skills for job market",
-      solution: "Comprehensive training programs with hands-on projects",
+      period: "January 2024 - April 2024",
+      type: "Internship",
+      challenge:
+        "Needed to build foundational understanding of AWS services for real-world deployments.",
+      solution:
+        "Completed hands-on labs deploying compute, storage, and networking resources using AWS best practices.",
       results: [
-        "Developed and delivered comprehensive technical training programs",
-        "Supported 100+ students in career development",
-        "Created practical curriculum aligned with industry needs",
-        "Achieved 85% student placement rate in tech roles",
+        "Configured 20+ S3 buckets with lifecycle policies, improving data management by 35%.",
+        "Deployed RDS instances with backups and encryption, reducing manual maintenance by 50%.",
+        "Launched multiple EC2 instances with load balancers, achieving 99.9% uptime in test environments.",
+        "Built an elastic Apache web server in a custom VPC with zero-downtime scaling.",
+        "Improved accessibility and security through precise Security Group and NACL configurations.",
       ],
-      icon: Users,
-      color: "from-purple-500 to-purple-600",
+      icon: Building2,
+      color: "from-warning-500 to-warning-600",
     },
   ];
 
   const getTypeColor = (type) => {
     switch (type) {
       case "Current Position":
-        return "bg-success-100 text-success-800";
+        return "bg-primary-100 text-primary-800";
       case "Contract":
         return "bg-primary-100 text-primary-800";
       case "Volunteer":
@@ -156,15 +148,15 @@ const Experience = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-secondary-900">
             Real Results for{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
               Real Businesses
             </span>
           </h2>
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
             A proven track record of delivering measurable improvements across
-            healthcare, education, and technology sectors
+            cloud infrastructure, software development, and DevOps automation
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-full mx-auto"></div>
         </div>
 
         {/* Experience Timeline */}
@@ -236,7 +228,7 @@ const Experience = () => {
                     {/* Results */}
                     <div>
                       <h4 className="font-semibold text-secondary-900 mb-3 flex items-center gap-2">
-                        <TrendingUp className="w-4 h-4 text-success-600" />
+                        <TrendingUp className="w-4 h-4 text-primary-600" />
                         Key Results
                       </h4>
                       <ul className="space-y-2">
@@ -245,7 +237,7 @@ const Experience = () => {
                             key={resultIndex}
                             className="flex items-start gap-2 text-sm text-secondary-600"
                           >
-                            <div className="w-1.5 h-1.5 bg-success-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
                             <span className="leading-relaxed">{result}</span>
                           </li>
                         ))}
@@ -264,7 +256,7 @@ const Experience = () => {
             inView ? "animate-fade-in delay-1000" : "opacity-0"
           }`}
         >
-          <div className="bg-gradient-to-r from-primary-600 to-accent-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-heading font-bold mb-4">
               Ready to Achieve Similar Results?
             </h3>

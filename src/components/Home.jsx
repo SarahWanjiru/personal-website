@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../assets/Hero.svg";
 import { ArrowDownToLine, Code, Database, Globe } from "lucide-react";
 import { useInView } from "react-intersection-observer";
+import { Cloud, ServerCog } from "lucide-react";
 
 const Home = () => {
   const { ref, inView } = useInView({
@@ -29,25 +30,24 @@ const Home = () => {
           <div className="space-y-4">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-secondary-900 leading-tight">
               Experienced{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
                 Full Stack Developer
               </span>
             </h1>
             <h2 className="text-xl lg:text-2xl text-secondary-700 font-medium">
-              & Digital Solutions Consultant
+               AWS Cloud & DevOps Engineer
             </h2>
             <p className="text-base lg:text-lg text-primary-600 font-medium">
-              Transforming businesses through scalable web applications
+              Transforming businesses through scalable cloud-powered applications that solve real-life problems.
             </p>
           </div>
 
           {/* Description */}
           <p className="text-lg text-secondary-600 leading-relaxed max-w-2xl">
-            With 4+ years of proven expertise in React, Node.js, Python, and
-            Ruby on Rails, I help businesses increase efficiency, drive growth,
-            and deliver exceptional user experiences. From startup MVPs to
-            enterprise solutions, I turn complex challenges into elegant digital
-            solutions.
+           Software Developer and AWS-certified Cloud & DevOps Engineer with expertise in building secure, 
+           scalable applications and cloud architectures. Skilled in modern frameworks, containerization with Docker/Kubernetes, 
+           CI/CD pipelines, and database optimization, 
+           I deliver efficient and innovative digital solutions that solve real-life problems.
           </p>
 
           {/* Tech Stack Highlights */}
@@ -70,6 +70,18 @@ const Home = () => {
                 Full Stack
               </span>
             </div>
+            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-soft">
+            <Cloud className="w-4 h-4 text-primary-600" />
+            <span className="text-sm font-medium text-secondary-700">
+              Cloud Engineer
+            </span>
+            </div>
+                      <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-soft">
+            <ServerCog className="w-4 h-4 text-primary-600" />
+            <span className="text-sm font-medium text-secondary-700">
+              DevOps
+            </span>
+            </div>
           </div>
 
           {/* CTA Buttons */}
@@ -87,10 +99,10 @@ const Home = () => {
               View Success Stories
             </a>
             <a
-              href="https://drive.google.com/uc?export=download&id=15RBmllg2EHkGYqlnIcyjDZQb0te13tOY"
+              href="https://drive.google.com/uc?export=download&id=1gUmsF8cg-6ASnZ-yjUFuxLsjRvUEoxCa"
               className="inline-flex items-center justify-center gap-3 text-primary-600 hover:text-primary-700 px-6 py-4 rounded-xl font-semibold transition-all duration-300 border-2 border-primary-200 hover:border-primary-300 hover:bg-primary-50"
               download
-              aria-label="Download Geoffrey Kithuku's Resume"
+              aria-label="Download Sarah's Resume"
             >
               <ArrowDownToLine size={20} />
               Download Resume
@@ -105,10 +117,11 @@ const Home = () => {
           }`}
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-accent-400 rounded-full opacity-20 blur-3xl scale-110"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full opacity-20 blur-3xl scale-110"></div>
             <img
               src={Hero}
-              alt="Geoffrey Kithuku - Full Stack Developer working on innovative software solutions"
+              alt="Sarah - Software Developer and AWS-certified Cloud & DevOps Engineer with expertise in building secure, 
+           scalable applications and cloud architectures."
               className="relative w-full max-w-lg h-auto rounded-2xl"
               loading="eager"
             />

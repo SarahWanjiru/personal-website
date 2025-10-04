@@ -160,8 +160,8 @@ const Form = () => {
   if (isSuccess) {
     return (
       <div className="text-center space-y-6 py-8">
-        <div className="mx-auto w-16 h-16 bg-success-100 rounded-full flex items-center justify-center">
-          <CheckCircle className="w-8 h-8 text-success-600" />
+        <div className="mx-auto w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
+          <CheckCircle className="w-8 h-8 text-primary-600" />
         </div>
         <div className="space-y-2">
           <h3 className="text-2xl font-semibold text-secondary-900">

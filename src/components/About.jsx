@@ -11,23 +11,23 @@ const About = () => {
   const highlights = [
     {
       icon: Code2,
-      title: "4+ Years Experience",
-      description: "Proven expertise in full-stack development",
-    },
-    {
-      icon: Lightbulb,
-      title: "Business Impact",
-      description: "Measurable results across multiple industries",
+      title: "Cloud & DevOps Expertise",
+      description: "Hands-on experience with AWS, Kubernetes, Terraform, and CI/CD pipelines",
     },
     {
       icon: Rocket,
-      title: "100+ Students Trained",
-      description: "Technical mentorship and knowledge transfer",
+      title: "Software Engineering",
+      description: "Building scalable web applications and solving real-world problems",
+    },
+    {
+      icon: Lightbulb,
+      title: "Continuous Learning",
+      description: "AWS Certified Cloud Practitioner with ongoing training in software development",
     },
     {
       icon: Users,
-      title: "Enterprise Solutions",
-      description: "From startups to healthcare organizations",
+      title: "Collaboration & Impact",
+      description: "Supporting startups, healthcare, and tech teams through innovation and teamwork",
     },
   ];
 
@@ -41,28 +41,27 @@ const About = () => {
           <div className="space-y-4">
             <h2 className="text-4xl lg:text-5xl font-heading font-bold text-secondary-900">
               Proven Track Record of{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
                 Delivering Results
               </span>
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-full"></div>
           </div>
 
           <div className="space-y-6 text-secondary-700 leading-relaxed">
             <p className="text-lg">
-              I'm Geoffrey Kithuku, a{" "}
+              I'm Sarah, a{" "}
               <strong>
-                Full Stack Software Developer and Digital Solutions Consultant
+                Full Stack Software Developer, AWS-certified Cloud & DevOps Engineer
               </strong>{" "}
-              with a passion for transforming business challenges into
-              innovative digital solutions. Over the past 4 years, I've helped
-              organizations across healthcare, education, and technology sectors
-              achieve measurable improvements in efficiency, user engagement,
-              and revenue growth.
+              with a passion for creating impactful digital solutions that
+              solve real-world problems. With over 3 years of experience, I have
+              successfully delivered projects across various industries,
+              including healthcare, e-commerce, and technology startups.
             </p>
 
             {/* Key Achievements */}
-            <div className="bg-gradient-to-r from-primary-50 to-accent-50 p-6 rounded-xl border border-primary-100">
+            <div className="bg-gradient-to-r from-primary-50 to-primary-100 p-6 rounded-xl border border-primary-100">
               <h3 className="font-semibold text-secondary-900 mb-4 text-lg">
                 Key Achievements Highlight:
               </h3>
@@ -70,71 +69,84 @@ const About = () => {
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-success-500 rounded-full"></div>
                   <span>
-                    <strong>30% increase in organic traffic</strong> through
-                    strategic SEO optimization at Molars Dental Hospital
+                    <strong>60% faster deployments</strong> by automating infrastructure with Terraform and CloudFormation
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-success-500 rounded-full"></div>
                   <span>
-                    <strong>90% reduction in equipment loss</strong> by
-                    implementing QR-based asset tracking systems
+                    <strong>40% improved scalability</strong> by deploying Python microservices in Docker and Kubernetes on AWS EKS
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-success-500 rounded-full"></div>
                   <span>
-                    <strong>25% boost in lead generation</strong> through
-                    high-converting landing page design
+                    <strong>55% faster issue resolution</strong> using CloudWatch, Prometheus, and automated monitoring dashboards
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-success-500 rounded-full"></div>
                   <span>
-                    <strong>10+ hours weekly saved</strong> through workflow
-                    automation for teams
+                    <strong>30% better database performance</strong> through optimized RDS and DynamoDB architectures
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-success-500 rounded-full"></div>
                   <span>
-                    <strong>95% user satisfaction rate</strong> in IT support
-                    and technical training
+                    <strong>Cross-functional collaboration</strong> across 5+ cloud migration and modernization projects, ensuring security, compliance, and cost efficiency
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
+                  <span>
+                    <strong>Hands-on software development</strong> delivering APIs, mobile apps, and web apps that solved real-world client problems
                   </span>
                 </li>
               </ul>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="font-semibold text-secondary-900 text-lg">
-                What Sets Me Apart:
-              </h3>
-              <div className="grid gap-4">
-                <div>
+                          {/* What Sets Me Apart */}
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-secondary-900 text-lg">
+                    What Sets Me Apart
+                  </h3>
+                  <div className="grid gap-4">
+                    <div>
+                      <h4 className="font-medium text-primary-600">
+                        Turning Problems into Products
+                      </h4>
+                      <p className="text-sm">
+                        I approach every challenge as an opportunity to create value—
+                        transforming real-world issues in healthcare, education, and business
+                        into working, impactful solutions.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-primary-600">
+                        End-to-End Engineering
+                      </h4>
+                      <p className="text-sm">
+                        From crafting sleek React interfaces to building resilient APIs and
+                        backend systems, I design applications that are both user-friendly and
+                        production-ready.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-primary-600">
+                        Cloud & DevOps Mindset
+                      </h4>
+                      <p className="text-sm">
+                        With AWS, Docker, Kubernetes, and Terraform in my toolkit, I focus on
+                        automation, scalability, and reliability—helping teams move faster while
+                        keeping systems secure and stable.
+                      </p>
+                    </div>
                   <h4 className="font-medium text-primary-600">
-                    Business-Focused Development
+                    DevOps & Cloud Proficiency
                   </h4>
                   <p className="text-sm">
-                    I don't just write code—I solve business problems. Every
-                    line of code is written with your ROI in mind.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-primary-600">
-                    Full-Stack Expertise
-                  </h4>
-                  <p className="text-sm">
-                    From React frontends to Ruby on Rails backends, I handle
-                    every aspect of your digital solution.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-primary-600">
-                    Proven Mentor & Trainer
-                  </h4>
-                  <p className="text-sm">
-                    Experience training 100+ students and staff, ensuring smooth
-                    technology adoption and knowledge transfer.
+                    Skilled in AWS, Docker, Kubernetes, and CI/CD pipelines—I bridge
+                    development and operations to enable faster, reliable deployments.
                   </p>
                 </div>
                 <div>
@@ -142,8 +154,8 @@ const About = () => {
                     Results-Driven Approach
                   </h4>
                   <p className="text-sm">
-                    My solutions deliver measurable results—increased traffic,
-                    improved efficiency, and enhanced user satisfaction.
+                    My solutions emphasize measurable impact—faster release cycles,
+                    increased system uptime, and smoother user experiences.
                   </p>
                 </div>
               </div>
@@ -182,17 +194,16 @@ const About = () => {
           }`}
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-200 to-accent-200 rounded-3xl rotate-6 scale-105 opacity-20"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-200 to-primary-400 rounded-3xl rotate-6 scale-105 opacity-20"></div>
             <div className="relative bg-white p-8 rounded-3xl shadow-strong">
               <img
                 src={AboutImg}
-                alt="Geoffrey Kithuku - About illustration showing software development"
+                alt="Sarah - About illustration showing software development"
                 className="w-full max-w-md h-auto"
               />
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };
