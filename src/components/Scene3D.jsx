@@ -80,18 +80,27 @@ const Monitor = () => {
         transform
         occlude
         distanceFactor={0.42}
+        zIndexRange={[100, 0]}
         style={{
           width: "1000px",
           height: "550px",
           pointerEvents: "auto",
         }}
       >
-        <div style={{
-          width: "1000px",
-          height: "550px",
-          overflow: "hidden",
-          borderRadius: "4px",
-        }}>
+        <div 
+          style={{
+            width: "1000px",
+            height: "550px",
+            borderRadius: "4px",
+            overflow: "auto",
+            cursor: "default",
+            WebkitOverflowScrolling: "touch",
+          }}
+          onWheel={(e) => e.stopPropagation()}
+          onTouchStart={(e) => e.stopPropagation()}
+          onTouchMove={(e) => e.stopPropagation()}
+          onTouchEnd={(e) => e.stopPropagation()}
+        >
           <PortfolioMonitor />
         </div>
       </Html>
@@ -495,7 +504,7 @@ const Scene3D = () => {
   return (
     <div style={{ width: "100vw", height: "100vh", background: "#1a1a2e" }}>
       <Canvas
-        camera={{ position: [0, 1, 1.2], fov: 50 }}
+        camera={{ position: [0, 1, 0.9], fov: 50 }}
         shadows
       >
         {/* Environment lighting */}
@@ -540,8 +549,8 @@ const Scene3D = () => {
         {/* Camera controls */}
         <OrbitControls 
           enablePan={false}
-          minDistance={1}
-          maxDistance={2.5}
+          minDistance={0.8}
+          maxDistance={2.0}
           minPolarAngle={Math.PI / 4}
           maxPolarAngle={Math.PI / 2.2}
           target={[0, 0.85, 0]}

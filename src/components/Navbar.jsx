@@ -6,7 +6,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({ onNavClick }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -57,6 +57,7 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#home"
+            onClick={(e) => onNavClick && onNavClick(e, 'home')}
             className="text-2xl lg:text-3xl font-heading font-bold text-secondary-900 hover:text-primary-600 transition-colors duration-300"
           >
             Sarah
@@ -68,6 +69,7 @@ const Navbar = () => {
               <a
                 key={item.href}
                 href={item.href}
+                onClick={(e) => onNavClick && onNavClick(e, item.href.substring(1))}
                 className="text-secondary-700 hover:text-primary-600 font-medium transition-colors duration-300 relative group"
               >
                 {item.label}
@@ -111,7 +113,10 @@ const Navbar = () => {
               <a
                 key={item.href}
                 href={item.href}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  setIsMobileMenuOpen(false);
+                  onNavClick && onNavClick(e, item.href.substring(1));
+                }}
                 className="block px-4 py-2 text-secondary-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-300 font-medium"
               >
                 {item.label}

@@ -4,7 +4,7 @@ import { ArrowDownToLine, Code, Database, Globe } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import { Cloud, ServerCog } from "lucide-react";
 
-const Home = () => {
+const Home = ({ onNavClick }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -88,12 +88,14 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#contact"
+              onClick={(e) => onNavClick && onNavClick(e, 'contact')}
               className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-medium hover:shadow-strong"
             >
               Start Your Project
             </a>
             <a
               href="#projects"
+              onClick={(e) => onNavClick && onNavClick(e, 'projects')}
               className="inline-flex items-center justify-center gap-3 bg-white hover:bg-secondary-50 text-secondary-800 px-8 py-4 rounded-xl font-semibold transition-all duration-300 border-2 border-secondary-200 hover:border-primary-300"
             >
               View Success Stories
