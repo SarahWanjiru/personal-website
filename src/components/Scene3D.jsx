@@ -5,7 +5,8 @@
 
 import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, ContactShadows, Stars } from "@react-three/drei";
+import { OrbitControls, ContactShadows, Html } from "@react-three/drei";
+import PortfolioMonitor from "./PortfolioMonitor";
 import * as THREE from "three";
 
 /**
@@ -70,30 +71,30 @@ const Monitor = () => {
       {/* Screen display */}
       <mesh position={[0, 0, 0.016]}>
         <planeGeometry args={[1.0, 0.55]} />
-        <meshBasicMaterial color="#0f172a" />
+        <meshBasicMaterial color="#ffffff" />
       </mesh>
       
-      {/* Code/content lines */}
-      <mesh position={[0, 0.18, 0.017]}>
-        <planeGeometry args={[0.7, 0.025]} />
-        <meshBasicMaterial color="#f472b6" />
-      </mesh>
-      <mesh position={[-0.08, 0.1, 0.017]}>
-        <planeGeometry args={[0.55, 0.02]} />
-        <meshBasicMaterial color="#c084fc" />
-      </mesh>
-      <mesh position={[0.05, 0.03, 0.017]}>
-        <planeGeometry args={[0.6, 0.02]} />
-        <meshBasicMaterial color="#22d3ee" />
-      </mesh>
-      <mesh position={[-0.1, -0.04, 0.017]}>
-        <planeGeometry args={[0.45, 0.02]} />
-        <meshBasicMaterial color="#4ade80" />
-      </mesh>
-      <mesh position={[0.08, -0.1, 0.017]}>
-        <planeGeometry args={[0.5, 0.02]} />
-        <meshBasicMaterial color="#fbbf24" />
-      </mesh>
+      {/* Portfolio content in monitor */}
+      <Html
+        position={[0, 0, 0.018]}
+        transform
+        occlude
+        distanceFactor={0.42}
+        style={{
+          width: "1000px",
+          height: "550px",
+          pointerEvents: "auto",
+        }}
+      >
+        <div style={{
+          width: "1000px",
+          height: "550px",
+          overflow: "hidden",
+          borderRadius: "4px",
+        }}>
+          <PortfolioMonitor />
+        </div>
+      </Html>
       
       {/* Monitor stand neck */}
       <mesh position={[0, -0.4, 0]}>
