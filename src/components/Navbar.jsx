@@ -52,7 +52,7 @@ const Navbar = ({ onNavClick }) => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <a
@@ -60,7 +60,7 @@ const Navbar = ({ onNavClick }) => {
             onClick={(e) => onNavClick && onNavClick(e, 'home')}
             className="text-2xl lg:text-3xl font-heading font-bold text-secondary-900 hover:text-primary-600 transition-colors duration-300"
           >
-            Sarah
+            SarahCodes
           </a>
 
           {/* Desktop Navigation */}

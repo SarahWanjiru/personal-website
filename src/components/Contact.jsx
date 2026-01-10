@@ -75,12 +75,12 @@ const Contact = () => {
               <h3 className="text-2xl font-heading font-semibold text-secondary-900">
                 Get in Touch
               </h3>
-              <p className="text-secondary-600 leading-relaxed">
-               <p className="text-lg text-gray-700">
-            I’m always open to new opportunities — from software development and cloud engineering roles to DevOps projects that solve real-world problems. 
-            Whether it’s building scalable systems, automating workflows, or discussing technology and innovation, I’d love to connect.
-              </p>
-              </p>
+              <div className="text-secondary-600 leading-relaxed">
+                <p className="text-lg text-gray-700">
+                  I’m always open to new opportunities — from software development and cloud engineering roles to DevOps projects that solve real-world problems. 
+                  Whether it’s building scalable systems, automating workflows, or discussing technology and innovation, I’d love to connect.
+                </p>
+              </div>
             </div>
 
             {/* Contact Details */}
