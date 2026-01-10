@@ -60,7 +60,7 @@ const Navbar = ({ onNavClick }) => {
             onClick={(e) => onNavClick && onNavClick(e, 'home')}
             className="text-2xl lg:text-3xl font-heading font-bold text-secondary-900 hover:text-primary-600 transition-colors duration-300"
           >
-            SarahCodes
+            sarahcodes
           </a>
 
           {/* Desktop Navigation */}
