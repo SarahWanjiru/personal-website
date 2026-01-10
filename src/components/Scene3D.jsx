@@ -53,7 +53,7 @@ const Desk = () => {
 /**
  * Monitor - Single monitor display
  */
-const Monitor = () => {
+const Monitor = ({ orbitControlsRef }) => {
   return (
     <group position={[0, 1.1, -0.25]}>
       {/* Monitor frame - bigger */}
@@ -88,6 +88,7 @@ const Monitor = () => {
         }}
       >
         <div 
+          data-portfolio-scroll
           style={{
             width: "1000px",
             height: "550px",
@@ -96,10 +97,12 @@ const Monitor = () => {
             cursor: "default",
             WebkitOverflowScrolling: "touch",
           }}
-          onWheel={(e) => e.stopPropagation()}
-          onTouchStart={(e) => e.stopPropagation()}
-          onTouchMove={(e) => e.stopPropagation()}
-          onTouchEnd={(e) => e.stopPropagation()}
+          onMouseEnter={() => orbitControlsRef.current && (orbitControlsRef.current.enabled = false)}
+          onMouseLeave={() => orbitControlsRef.current && (orbitControlsRef.current.enabled = true)}
+          onWheel={(e) => {
+            const container = e.currentTarget;
+            container.scrollTop += e.deltaY;
+          }}
         >
           <PortfolioMonitor />
         </div>
@@ -501,10 +504,12 @@ const Wall = () => {
  * Main Scene Component
  */
 const Scene3D = () => {
+  const orbitControlsRef = useRef();
+  
   return (
     <div style={{ width: "100vw", height: "100vh", background: "#1a1a2e" }}>
       <Canvas
-        camera={{ position: [0, 1, 0.9], fov: 50 }}
+        camera={{ position: [0, 1, 0.65], fov: 50 }}
         shadows
       >
         {/* Environment lighting */}
@@ -530,7 +535,7 @@ const Scene3D = () => {
         
         {/* Desk Setup */}
         <Desk />
-        <Monitor />
+        <Monitor orbitControlsRef={orbitControlsRef} />
         <Keyboard />
         <Mouse />
         
@@ -548,9 +553,10 @@ const Scene3D = () => {
 
         {/* Camera controls */}
         <OrbitControls 
+          ref={orbitControlsRef}
           enablePan={false}
-          minDistance={0.8}
-          maxDistance={2.0}
+          minDistance={0.6}
+          maxDistance={1.5}
           minPolarAngle={Math.PI / 4}
           maxPolarAngle={Math.PI / 2.2}
           target={[0, 0.85, 0]}
